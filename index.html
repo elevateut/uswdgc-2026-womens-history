@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>USWDGC 2026 — Women's History Check-in Display · Concept Brief</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+
+<style>
+  :root {
+    --uswdgc-navy: #003462;
+    --uswdgc-navy-2: #02477f;
+    --uswdgc-teal: #009F91;
+    --uswdgc-yellow: #FABE28;
+    --paper: #F5F2EA;
+    --text: rgba(255,255,255,0.95);
+    --text-muted: rgba(255,255,255,0.65);
+  }
+
+  html, body { background: var(--uswdgc-navy); }
+
+  .reveal { font-family: 'Roboto', Helvetica, sans-serif; color: var(--text); background: var(--uswdgc-navy); }
+  .reveal .slides { text-align: left; }
+  .reveal .slides section { background: var(--uswdgc-navy); padding: 48px 44px; box-sizing: border-box; }
+  .reveal p, .reveal li { overflow-wrap: break-word; word-wrap: break-word; }
+
+  .reveal h1, .reveal h2, .reveal h3 { font-family: 'Roboto', sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: -0.005em; color: #fff; margin: 0; }
+  .reveal h1 { font-size: 70pt; line-height: 1.05; }
+  .reveal h2 { font-size: 48pt; line-height: 1.1; }
+  .reveal h3 { font-size: 28pt; line-height: 1.2; }
+  .reveal p, .reveal li { font-size: 22pt; line-height: 1.5; color: var(--text); }
+  .reveal em { font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-weight: 400; }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--uswdgc-teal);
+    font-size: 16pt;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .year-mark {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--uswdgc-teal);
+    line-height: 1;
+  }
+  .lead {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 26pt;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .meta {
+    margin-top: 36px;
+    font-size: 14pt;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* POC banner */
+  .poc-banner {
+    background: rgba(250, 190, 40, 0.12);
+    border: 1px solid var(--uswdgc-yellow);
+    padding: 18px 22px;
+    margin: 20px 0;
+    border-radius: 2px;
+    font-size: 17pt;
+    color: var(--text);
+  }
+  .poc-banner strong { color: var(--uswdgc-yellow); font-weight: 700; }
+  .poc-tag {
+    position: absolute;
+    right: 22px;
+    top: 18px;
+    background: rgba(250,190,40,0.15);
+    border: 1px solid var(--uswdgc-yellow);
+    padding: 8px 16px;
+    border-radius: 2px;
+    color: var(--uswdgc-yellow);
+    font-size: 13pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    z-index: 5;
+  }
+
+  /* Cover */
+  .cover {
+    text-align: center;
+    padding: 80px 60px !important;
+  }
+  .cover .eyebrow { margin-bottom: 32px; }
+  .cover h1 { font-size: 74pt; margin-bottom: 20px; }
+  .cover .lead { max-width: 660px; margin: 24px auto 0; font-size: 26pt; }
+  .cover .audience {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    font-size: 17pt;
+    line-height: 1.7;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .cover .audience strong { color: var(--uswdgc-teal); font-weight: 700; }
+
+  /* Content slide */
+  .content-slide h2 { margin-bottom: 28px; }
+  .content-slide ul { padding: 0; margin: 0; list-style: none; }
+  .content-slide li {
+    padding: 14px 0 14px 22px;
+    border-left: 2px solid var(--uswdgc-teal);
+    margin-bottom: 14px;
+    font-size: 22pt;
+    line-height: 1.4;
+  }
+  .content-slide li strong { color: var(--uswdgc-yellow); font-weight: 700; }
+
+  /* The arc table */
+  .arc-table { width: 100%; border-collapse: collapse; margin-top: 18px; }
+  .arc-table th, .arc-table td {
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    font-size: 17pt;
+    vertical-align: top;
+  }
+  .arc-table th {
+    color: var(--uswdgc-teal);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 14pt;
+    font-weight: 700;
+    border-bottom: 1px solid var(--uswdgc-teal);
+  }
+  .arc-table .yr { color: var(--uswdgc-yellow); font-weight: 700; font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 26pt; }
+  .arc-table .moment { color: #fff; font-weight: 500; }
+  .arc-table .living { color: var(--uswdgc-teal); font-style: italic; font-size: 15pt; font-family: 'EB Garamond', Georgia, serif; }
+
+  /* Poster slides */
+  .poster-slide { display: flex !important; align-items: center; justify-content: center; height: 100% !important; padding: 0 !important; flex-direction: column; }
+  .poster-slide img {
+    max-height: 78%;
+    max-width: 88%;
+    width: auto;
+    height: auto;
+    box-shadow: 0 16px 50px rgba(0,0,0,0.55);
+    margin-top: 8px;
+  }
+  .poster-caption {
+    width: 88%;
+    margin: 14px auto 0;
+    padding: 14px 16px;
+    background: rgba(0,0,0,0.35);
+    border-left: 3px solid var(--uswdgc-teal);
+    border-radius: 2px;
+  }
+  .poster-caption .kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 13pt;
+    font-weight: 700;
+    color: var(--uswdgc-teal);
+    margin-bottom: 6px;
+  }
+  .poster-caption h3 { font-size: 19pt; margin-bottom: 6px; line-height: 1.2; }
+  .poster-caption p { font-size: 16pt; color: var(--text-muted); margin: 0; line-height: 1.4; }
+
+  /* Partnership box */
+  .partnership-box {
+    margin-top: 24px;
+    padding: 24px;
+    border: 1px solid var(--uswdgc-teal);
+    border-radius: 2px;
+    background: rgba(0,159,145,0.08);
+  }
+  .partnership-box .pb-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--uswdgc-teal);
+    font-size: 14pt;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .partnership-box p { font-size: 17pt; line-height: 1.5; }
+  .partnership-box em { color: var(--uswdgc-yellow); }
+
+  /* Reveal chrome */
+  .reveal .progress { color: var(--uswdgc-teal); }
+  .reveal .controls { color: var(--uswdgc-teal); }
+  .reveal .slide-number { background: rgba(0,0,0,0.4); color: var(--uswdgc-teal); font-family: 'Roboto', sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- 1. COVER -->
+    <section class="cover" id="cover">
+      <div class="eyebrow">USWDGC 2026 · Concept Brief</div>
+      <h1>Women's History<br>Check-in Display</h1>
+      <p class="lead"><em>Six poster panels at registration, anchored by the Delicate Arch.<br>Five pivotal moments in the history of women's disc golf, plus a Utah welcome.</em></p>
+      <div class="audience">
+        Prepared for <strong>Matt Rothstein</strong> &amp; the <strong>PDGA Women's Committee</strong><br>
+        From the USWDGC 2026 Local Organizing Committee · ElevateUT Disc Golf
+      </div>
+    </section>
+
+    <!-- 2. WHAT THIS IS -->
+    <section class="content-slide" id="what">
+      <div class="eyebrow">What we're building</div>
+      <h2>A women's history wall<br>at check-in.</h2>
+      <p style="margin-top:24px; font-size:20pt; line-height:1.5;">
+        Six 24"×36" vertical posters in the registration area at the Utah Cultural Celebration Center, alongside the 12'×13' Delicate Arch centerpiece.
+        Players, families, sponsors, and press will pass through this space throughout opening weekend.
+      </p>
+      <ul style="margin-top:24px;">
+        <li><strong>Five panels</strong> trace pivotal moments in women's disc golf history, 1979 → 2017.</li>
+        <li><strong>One welcome panel</strong> closes the loop on the present moment — the 25th USWDGC, in Utah.</li>
+        <li><strong>Three of the women in the historical panels</strong> (Sheryl Newland, Elaine King, Juliana Korver) are physically registered for USWDGC 2026 — the wall is alive, not a museum.</li>
+        <li><strong>The May 4 LOC vote</strong> placed the women's history display under Matt Rothstein's stewardship; this brief is our concept proposal for that display.</li>
+      </ul>
+    </section>
+
+    <!-- 3. POC DISCLOSURE -->
+    <section class="content-slide" id="poc">
+      <div class="eyebrow">A note on what you're looking at</div>
+      <h2>These are proof-<br>of-concept mockups.</h2>
+      <p style="margin-top:24px; font-size:20pt; line-height:1.5;">
+        Every poster image in this deck was assembled with AI image generation as a way to communicate intent — composition, hierarchy, and the narrative arc of the panel system. They are <em>not</em> press-ready.
+      </p>
+      <div class="poc-banner">
+        <strong>What's intentional:</strong> the brand discipline (USWDGC navy / teal / yellow), the layout grid, the headline copy, the body text, the source citations, the screening callout, and the panel-to-panel narrative.
+      </div>
+      <div class="poc-banner">
+        <strong>What's a placeholder:</strong> every photograph and the typography rendering. Final art will be produced by a designer working in <em>Suiza · Adobe Garamond Premier Pro · Roboto</em> with properly licensed archival photography sourced through the Steady Initiative partnership.
+      </div>
+      <p style="margin-top:18px; font-size:18pt; color:var(--text-muted);"><em>We're showing our work transparently. Treat what follows as a concept brief, not a finished design.</em></p>
+    </section>
+
+    <!-- 4. THE ARC -->
+    <section class="content-slide" id="arc">
+      <div class="eyebrow">The arc</div>
+      <h2>Five moments,<br>one welcome.</h2>
+      <table class="arc-table">
+        <thead>
+          <tr><th style="width:14%">Year</th><th style="width:46%">Pivotal moment</th><th>Living subject in the field</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="yr">1979</td>
+            <td class="moment">Sheryl Newland's FLOW campaign forces Wham-O to invite 10 women to the $50K Invitational. <em>"Call off the wolves."</em></td>
+            <td class="living">Sheryl Newland · PDGA #76</td>
+          </tr>
+          <tr>
+            <td class="yr">1983</td>
+            <td class="moment">Marie Jackson becomes the first FPO World Champion at Huntsville after hosts override Headrick.</td>
+            <td class="living">—</td>
+          </tr>
+          <tr>
+            <td class="yr">1993</td>
+            <td class="moment">Elaine King is appointed PDGA Commissioner. Waterloo NWC debuts ($2,500 Bud Light purse).</td>
+            <td class="living">Elaine King</td>
+          </tr>
+          <tr>
+            <td class="yr">1999</td>
+            <td class="moment">Juliana Korver wins the inaugural USWDGC by 35 strokes — still the largest margin in the championship's history.</td>
+            <td class="living">Juliana Korver · FP50</td>
+          </tr>
+          <tr>
+            <td class="yr">2017</td>
+            <td class="moment">Valarie Jenkins-Doss departs Innova: <em>"…the countless honors I have been denied, because I am a woman."</em> What follows: 2020 equal payouts · Tattar's Grand Slam · ~7% participation, still.</td>
+            <td class="living">—</td>
+          </tr>
+          <tr>
+            <td class="yr">2026</td>
+            <td class="moment">The welcome — a Utah welcome to the women of the world. Closes with Tita Ugalde's 1987 quote.</td>
+            <td class="living">All three above</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 5–10. POSTER MOCKUPS -->
+    <section class="poster-slide" id="p1">
+      <div class="poc-tag">Proof of concept</div>
+      <img src="mockups/p1_1979_v2.png" alt="Panel 1 — 1979">
+      <div class="poster-caption">
+        <div class="kicker">Panel 1 · 1979 · Organized advocacy</div>
+        <h3>Call off the wolves.</h3>
+        <p>The first organized victory for women in disc golf. Hero artifact: Sheryl Newland's actual February 24, 1979 letter to Bob Gardner.</p>
+      </div>
+    </section>
+
+    <section class="poster-slide" id="p2">
+      <div class="poc-tag">Proof of concept</div>
+      <img src="mockups/p2_1983_v2.png" alt="Panel 2 — 1983">
+      <div class="poster-caption">
+        <div class="kicker">Panel 2 · 1983 · The breakthrough</div>
+        <h3>Marie Jackson became the first FPO World Champion.</h3>
+        <p>Hosts Tom Monroe and Levone Wolfe overruled Headrick's one-division policy. 21 women played. Jackson won. There has never again been a Worlds without women.</p>
+      </div>
+    </section>
+
+    <section class="poster-slide" id="p3">
+      <div class="poc-tag">Proof of concept</div>
+      <img src="mockups/p3_1993_v2.png" alt="Panel 3 — 1993">
+      <div class="poster-caption">
+        <div class="kicker">Panel 3 · 1993 · Running the sport</div>
+        <h3>Elaine King was appointed PDGA Commissioner.</h3>
+        <p>A 3× FPO World Champion took the wheel of the entire association. Same year: Waterloo NWC debuts; Lynne Warren chairs the Women's Committee.</p>
+      </div>
+    </section>
+
+    <section class="poster-slide" id="p4">
+      <div class="poc-tag">Proof of concept</div>
+      <img src="mockups/p4_1999_v2.png" alt="Panel 4 — 1999">
+      <div class="poster-caption">
+        <div class="kicker">Panel 4 · 1999 · The inaugural</div>
+        <h3>Juliana Korver won by 35 strokes.</h3>
+        <p>The largest margin of victory in this championship's history. Still. Hero artifact: the actual 1999 magazine spread with Juliana Bower at the top of the inaugural scorecard.</p>
+      </div>
+    </section>
+
+    <section class="poster-slide" id="p5">
+      <div class="poc-tag">Proof of concept</div>
+      <img src="mockups/p5_2017_v1.png" alt="Panel 5 — 2017">
+      <div class="poster-caption">
+        <div class="kicker">Panel 5 · 2017 · Equity</div>
+        <h3>"…the countless honors I have been denied, because I am a woman."</h3>
+        <p>Valarie Jenkins-Doss departs Innova. What followed: 2020 equal payouts · Tattar's $125K salary · the first Grand Slam · still ~7% participation.</p>
+      </div>
+    </section>
+
+    <section class="poster-slide" id="p6">
+      <div class="poc-tag">Proof of concept</div>
+      <img src="mockups/p6_welcome_v3.png" alt="Panel 6 — Welcome">
+      <div class="poster-caption">
+        <div class="kicker">Panel 6 · 2026 · Welcome</div>
+        <h3>A Utah welcome to the women of the world.</h3>
+        <p>Closes with the Tita Ugalde quote the LOC unanimously approved. Three living subjects from earlier panels named in the field. Presented by MVP Disc Sports.</p>
+      </div>
+    </section>
+
+    <!-- 11. THE PARTNERSHIP -->
+    <section class="content-slide" id="partnership">
+      <div class="eyebrow">In partnership with</div>
+      <h2>The Steady Initiative.</h2>
+      <p style="margin-top:24px; font-size:20pt; line-height:1.5;">
+        USWDGC 2026 is screening <em>No Girls Allowed: The Untold History of Women's Disc Golf</em> + a panel discussion during opening weekend. The synthesis behind these panels draws directly from that documentary's research.
+      </p>
+      <p style="margin-top:14px; font-size:20pt; line-height:1.5;">
+        We're proposing the check-in display run as a <strong>co-presentation with The Steady Initiative</strong>. Every panel carries an "Original research from <em>No Girls Allowed</em>" credit beneath the USWDGC mark.
+      </p>
+      <div class="partnership-box">
+        <div class="pb-eyebrow">What the partnership unlocks</div>
+        <p style="margin-bottom:10px;"><strong style="color:var(--uswdgc-teal)">Licensed archival photography</strong> through Steady's source materials — PDGA archives, Disc Golfer Magazine, Inside Disc Golf, FLOW newsletter scans, primary correspondence — for the photo slots in panels 2, 3, and 4.</p>
+        <p style="margin-bottom:10px;"><strong style="color:var(--uswdgc-teal)">A real archival voice</strong> instead of placeholder imagery. The mockups in this deck use documentary stills <em>only</em> as a visual aide for this conversation.</p>
+        <p style="margin:0;"><strong style="color:var(--uswdgc-teal)">A natural editorial home</strong> for the women in the panels who are physically attending — Newland, King, Korver — and an expanded panelist roster for the Friday screening.</p>
+      </div>
+    </section>
+
+    <!-- 12. WHAT WE NEED -->
+    <section class="content-slide" id="ask">
+      <div class="eyebrow">What we'd like from you</div>
+      <h2>Three asks.</h2>
+      <ul style="margin-top:18px;">
+        <li>
+          <strong>Confirm the partnership framing.</strong>
+          Is "in partnership with The Steady Initiative" the right language? Any logo, wordmark, or attribution requests for the on-poster credit line? Anything you'd want the PDGA Women's Committee to second on the credit?
+        </li>
+        <li>
+          <strong>Open the archival photo channel.</strong>
+          For panels 2, 3, and 4 we need licensed archival photographs — Marie Jackson at 1983 Huntsville, Elaine King and the 1993 Waterloo NWC, Juliana Bower at 1999 Hornet's Nest. Steady's source archive is the natural channel; would you be willing to broker access?
+        </li>
+        <li>
+          <strong>Feedback on the structure.</strong>
+          Is 1979 → 1983 → 1993 → 1999 → 2017 the right five? Anything you'd swap or add? The PDGA Women's Committee's perspective is welcome — this is a community artifact, not a unilateral piece.
+        </li>
+      </ul>
+    </section>
+
+    <!-- 13. WHAT'S NEXT -->
+    <section class="content-slide" id="next">
+      <div class="eyebrow">What happens after sign-off</div>
+      <h2>Designer takes it from here.</h2>
+      <p style="margin-top:24px; font-size:20pt; line-height:1.5;">
+        Once the structure and photo channel are confirmed, the project moves to a designer for final art — working in the official USWDGC type system (<em>Suiza · Adobe Garamond Premier Pro · Roboto</em>), placing licensed photography, and rendering at print resolution.
+      </p>
+      <ul style="margin-top:24px;">
+        <li><strong>Designer brief:</strong> the full copy, brand spec, layout grid, and source notes are already written and live with the LOC. Designer takes the brief, not the AI mockups.</li>
+        <li><strong>Print spec:</strong> 24×36 vertical, heavyweight matte stock, mounted on coroplast for the registration area.</li>
+        <li><strong>Print lead time:</strong> 7–10 business days from final art to delivery.</li>
+        <li><strong>Install:</strong> coordinated with Eric Erickson around the Delicate Arch centerpiece.</li>
+      </ul>
+      <p style="margin-top:28px; font-size:20pt; color:var(--text-muted); font-style:italic; font-family: 'EB Garamond', Georgia, serif;">
+        The mockups are the conversation, not the deliverable. The designer is the deliverable.
+      </p>
+    </section>
+
+    <!-- 14. CLOSING -->
+    <section class="cover" id="closing">
+      <div class="eyebrow">Thank you</div>
+      <h1 style="font-size:58pt;">Looking forward to<br>building it together.</h1>
+      <p class="lead" style="max-width:560px; margin-top:32px;"><em>Questions, feedback, redirects — all welcome. We'd rather rebuild this with you than ship it without you.</em></p>
+      <div class="audience">
+        Scott Belchak · Executive Director · ElevateUT Disc Golf<br>
+        scott@elevateut.org<br>
+        USWDGC 2026 Local Organizing Committee
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    width: 800,
+    height: 1200,
+    margin: 0.04,
+    minScale: 0.2,
+    maxScale: 2.0,
+    controls: true,
+    progress: true,
+    slideNumber: 'c/t',
+    hash: true,
+    transition: 'fade',
+    backgroundTransition: 'none',
+    center: false,
+    plugins: [ RevealNotes ]
+  });
+</script>
+
+</body>
+</html>
