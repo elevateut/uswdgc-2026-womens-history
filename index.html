@@ -173,6 +173,28 @@
   .poster-caption h3 { font-size: 19pt; margin-bottom: 6px; line-height: 1.2; }
   .poster-caption p { font-size: 16pt; color: var(--text-muted); margin: 0; line-height: 1.4; }
 
+  /* Mockup pending placeholder */
+  .mockup-pending {
+    max-height: 78%;
+    max-width: 88%;
+    width: 520px;
+    height: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.35);
+    border: 2px dashed var(--uswdgc-teal);
+    border-radius: 4px;
+    margin-top: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    color: var(--text-muted);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
   /* Partnership box */
   .partnership-box {
     margin-top: 24px;
@@ -207,7 +229,7 @@
     <section class="cover" id="cover">
       <div class="eyebrow">USWDGC 2026 · Concept Brief</div>
       <h1>Women's History<br>Check-in Display</h1>
-      <p class="lead"><em>Six poster panels at registration, anchored by the Delicate Arch.<br>Five pivotal moments in the history of women's disc golf, plus a Utah welcome.</em></p>
+      <p class="lead"><em>Seven poster panels at registration, anchored by the Delicate Arch.<br>Six pivotal moments in the history of women's disc golf, plus a Utah welcome.</em></p>
       <div class="audience">
         Prepared for <strong>Matt Rothstein</strong> &amp; the <strong>PDGA Women's Committee</strong><br>
         From the USWDGC 2026 Local Organizing Committee · ElevateUT Disc Golf
@@ -219,14 +241,14 @@
       <div class="eyebrow">What we're building</div>
       <h2>A women's history wall<br>at check-in.</h2>
       <p style="margin-top:24px; font-size:20pt; line-height:1.5;">
-        Six 24"×36" vertical posters in the registration area at the Utah Cultural Celebration Center, alongside the 12'×13' Delicate Arch centerpiece.
+        Seven 24"x36" vertical posters in the registration area at the Utah Cultural Celebration Center, alongside the 12'x13' Delicate Arch centerpiece.
         Players, families, sponsors, and press will pass through this space throughout opening weekend.
       </p>
       <ul style="margin-top:24px;">
-        <li><strong>Five panels</strong> trace pivotal moments in women's disc golf history, 1979 → 2017.</li>
+        <li><strong>Six panels</strong> trace pivotal moments in women's disc golf history, 1976 → 2012.</li>
         <li><strong>One welcome panel</strong> closes the loop on the present moment — the 25th USWDGC, in Utah.</li>
-        <li><strong>Three of the women in the historical panels</strong> (Sheryl Newland, Elaine King, Juliana Korver) are physically registered for USWDGC 2026 — the wall is alive, not a museum.</li>
-        <li><strong>The May 4 LOC vote</strong> placed the women's history display under Matt Rothstein's stewardship; this brief is our concept proposal for that display.</li>
+        <li><strong>Five of the women in the historical panels</strong> (Sheryl Newland, Elaine King, Juliana Korver, Tita Ugalde, Michele Marini) are physically registered for USWDGC 2026 — the wall is alive, not a museum.</li>
+        <li><strong>Matt Rothstein's May 11 proposal</strong> established the 7-panel arc; the May 4 LOC vote placed the women's history display under his stewardship.</li>
       </ul>
     </section>
 
@@ -249,15 +271,20 @@
     <!-- 4. THE ARC -->
     <section class="content-slide" id="arc">
       <div class="eyebrow">The arc</div>
-      <h2>Five moments,<br>one welcome.</h2>
+      <h2>Six moments,<br>one welcome.</h2>
       <table class="arc-table">
         <thead>
-          <tr><th style="width:14%">Year</th><th style="width:46%">Pivotal moment</th><th>Living subject in the field</th></tr>
+          <tr><th style="width:14%">Year</th><th style="width:46%">Pivotal moment</th><th>Living subject</th></tr>
         </thead>
         <tbody>
           <tr>
+            <td class="yr">1976</td>
+            <td class="moment">Women turn out for the WFC — Tita Ugalde, Michele Marini, Patti Hipsky, Jo Cahow. The title image for <em>No Girls Allowed</em>.</td>
+            <td class="living">Tita Ugalde · Michele Marini (both confirmed attending)</td>
+          </tr>
+          <tr>
             <td class="yr">1979</td>
-            <td class="moment">Sheryl Newland's FLOW campaign forces Wham-O to invite 10 women to the $50K Invitational. <em>"Call off the wolves."</em></td>
+            <td class="moment">Sheryl Newland's FLOW campaign forces Wham-O to invite women to the $50K Invitational. <em>"Call off the wolves."</em></td>
             <td class="living">Sheryl Newland · PDGA #76</td>
           </tr>
           <tr>
@@ -266,9 +293,9 @@
             <td class="living">—</td>
           </tr>
           <tr>
-            <td class="yr">1993</td>
-            <td class="moment">Elaine King is appointed PDGA Commissioner. Waterloo NWC debuts ($2,500 Bud Light purse).</td>
-            <td class="living">Elaine King</td>
+            <td class="yr">1986</td>
+            <td class="moment">The PDGA constitution establishes a permanent Women's Committee. Tami Pellicane becomes its first chair.</td>
+            <td class="living">— (Pellicane status TBD)</td>
           </tr>
           <tr>
             <td class="yr">1999</td>
@@ -276,81 +303,91 @@
             <td class="living">Juliana Korver · FP50</td>
           </tr>
           <tr>
-            <td class="yr">2017</td>
-            <td class="moment">Valarie Jenkins-Doss departs Innova: <em>"…the countless honors I have been denied, because I am a woman."</em> What follows: 2020 equal payouts · Tattar's Grand Slam · ~7% participation, still.</td>
+            <td class="yr">2012</td>
+            <td class="moment">Valarie Jenkins-Doss founds the Women's Global Event. Thousands of women worldwide. The infrastructure that persists.</td>
             <td class="living">—</td>
           </tr>
           <tr>
             <td class="yr">2026</td>
-            <td class="moment">The welcome — a Utah welcome to the women of the world. Closes with Tita Ugalde's 1987 quote.</td>
-            <td class="living">All three above</td>
+            <td class="moment">The welcome — a Utah welcome to the women of the world.</td>
+            <td class="living">All five above</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <!-- 5–10. POSTER MOCKUPS -->
+    <!-- 5–11. POSTER MOCKUPS -->
     <section class="poster-slide" id="p1">
       <div class="poc-tag">Proof of concept</div>
-      <img src="mockups/p1_1979_v2.png" alt="Panel 1 — 1979">
+      <div class="mockup-pending">[MOCKUP PENDING — 1976 WFC]</div>
       <div class="poster-caption">
-        <div class="kicker">Panel 1 · 1979 · Organized advocacy</div>
-        <h3>Call off the wolves.</h3>
-        <p>The first organized victory for women in disc golf. Hero artifact: Sheryl Newland's actual February 24, 1979 letter to Bob Gardner.</p>
+        <div class="kicker">Panel 1 · 1976 · Women were there from the beginning</div>
+        <h3>The first women's competitive Frisbee.</h3>
+        <p>Patti Hipsky's 1976 article. Jo Cahow as 2x champion. Tita Ugalde and Michele Marini confirmed at USWDGC 2026 — the living proof that this history belongs to people still in the field.</p>
       </div>
     </section>
 
     <section class="poster-slide" id="p2">
       <div class="poc-tag">Proof of concept</div>
-      <img src="mockups/p2_1983_v2.png" alt="Panel 2 — 1983">
+      <img src="mockups/p1_1979_v2.png" alt="Panel 2 — 1979">
       <div class="poster-caption">
-        <div class="kicker">Panel 2 · 1983 · The breakthrough</div>
-        <h3>Marie Jackson became the first FPO World Champion.</h3>
-        <p>Hosts Tom Monroe and Levone Wolfe overruled Headrick's one-division policy. 21 women played. Jackson won. There has never again been a Worlds without women.</p>
+        <div class="kicker">Panel 2 · 1979 · Organized advocacy</div>
+        <h3>Call off the wolves.</h3>
+        <p>The first organized victory for women in disc golf. Hero artifact: Sheryl Newland's actual February 24, 1979 letter to Bob Gardner.</p>
       </div>
     </section>
 
     <section class="poster-slide" id="p3">
       <div class="poc-tag">Proof of concept</div>
-      <img src="mockups/p3_1993_v2.png" alt="Panel 3 — 1993">
+      <img src="mockups/p2_1983_v2.png" alt="Panel 3 — 1983">
       <div class="poster-caption">
-        <div class="kicker">Panel 3 · 1993 · Running the sport</div>
-        <h3>Elaine King was appointed PDGA Commissioner.</h3>
-        <p>A 3× FPO World Champion took the wheel of the entire association. Same year: Waterloo NWC debuts; Lynne Warren chairs the Women's Committee.</p>
+        <div class="kicker">Panel 3 · 1983 · The breakthrough</div>
+        <h3>Marie Jackson became the first FPO World Champion.</h3>
+        <p>Hosts Tom Monroe and Levone Wolfe overruled Headrick's one-division policy. 21 women played. Jackson won. There has never again been a Worlds without women.</p>
       </div>
     </section>
 
     <section class="poster-slide" id="p4">
       <div class="poc-tag">Proof of concept</div>
-      <img src="mockups/p4_1999_v2.png" alt="Panel 4 — 1999">
+      <div class="mockup-pending">[MOCKUP PENDING — 1986 PDGA Women's Committee]</div>
       <div class="poster-caption">
-        <div class="kicker">Panel 4 · 1999 · The inaugural</div>
-        <h3>Juliana Korver won by 35 strokes.</h3>
-        <p>The largest margin of victory in this championship's history. Still. Hero artifact: the actual 1999 magazine spread with Juliana Bower at the top of the inaugural scorecard.</p>
+        <div class="kicker">Panel 4 · 1986 · A formal voice</div>
+        <h3>The PDGA Women's Committee.</h3>
+        <p>The 1986 PDGA constitution established standing committees — including a Women's Committee with Tami Pellicane as first chair. Her framework of Women's Targeted Tournaments proved that grassroots outreach worked.</p>
       </div>
     </section>
 
     <section class="poster-slide" id="p5">
       <div class="poc-tag">Proof of concept</div>
-      <img src="mockups/p5_2017_v1.png" alt="Panel 5 — 2017">
+      <img src="mockups/p4_1999_v2.png" alt="Panel 5 — 1999">
       <div class="poster-caption">
-        <div class="kicker">Panel 5 · 2017 · Equity</div>
-        <h3>"…the countless honors I have been denied, because I am a woman."</h3>
-        <p>Valarie Jenkins-Doss departs Innova. What followed: 2020 equal payouts · Tattar's $125K salary · the first Grand Slam · still ~7% participation.</p>
+        <div class="kicker">Panel 5 · 1999 · The inaugural</div>
+        <h3>Juliana Korver won by 35 strokes.</h3>
+        <p>The largest margin of victory in this championship's history. Still. Hero artifact: the actual 1999 magazine spread with Juliana Bower at the top of the inaugural scorecard.</p>
       </div>
     </section>
 
     <section class="poster-slide" id="p6">
       <div class="poc-tag">Proof of concept</div>
-      <img src="mockups/p6_welcome_v3.png" alt="Panel 6 — Welcome">
+      <div class="mockup-pending">[MOCKUP PENDING — 2012 Women's Global Event]</div>
       <div class="poster-caption">
-        <div class="kicker">Panel 6 · 2026 · Welcome</div>
-        <h3>A Utah welcome to the women of the world.</h3>
-        <p>Closes with the Tita Ugalde quote the LOC unanimously approved. Three living subjects from earlier panels named in the field. Presented by MVP Disc Sports.</p>
+        <div class="kicker">Panel 6 · 2012 · Modern infrastructure</div>
+        <h3>The Women's Global Event.</h3>
+        <p>Valarie Jenkins-Doss founded the WGE in 2012 — a worldwide disc golf day for women and girls. By 2026, thousands of participants in hundreds of events across the globe. The infrastructure that persists.</p>
       </div>
     </section>
 
-    <!-- 11. THE PARTNERSHIP -->
+    <section class="poster-slide" id="p7">
+      <div class="poc-tag">Proof of concept</div>
+      <img src="mockups/p6_welcome_v3.png" alt="Panel 7 — Welcome">
+      <div class="poster-caption">
+        <div class="kicker">Panel 7 · 2026 · Welcome</div>
+        <h3>A Utah welcome to the women of the world.</h3>
+        <p>You've just walked past 50 years of women's disc golf history. Five of those women — Sheryl Newland, Tita Ugalde, Michele Marini, Juliana Korver, and Elaine King — are in the field this week. Presented by MVP Disc Sports.</p>
+      </div>
+    </section>
+
+    <!-- 12. THE PARTNERSHIP -->
     <section class="content-slide" id="partnership">
       <div class="eyebrow">In partnership with</div>
       <h2>The Steady Initiative.</h2>
@@ -362,43 +399,51 @@
       </p>
       <div class="partnership-box">
         <div class="pb-eyebrow">What the partnership unlocks</div>
-        <p style="margin-bottom:10px;"><strong style="color:var(--uswdgc-teal)">Licensed archival photography</strong> through Steady's source materials — PDGA archives, Disc Golfer Magazine, Inside Disc Golf, FLOW newsletter scans, primary correspondence — for the photo slots in panels 2, 3, and 4.</p>
-        <p style="margin-bottom:10px;"><strong style="color:var(--uswdgc-teal)">A real archival voice</strong> instead of placeholder imagery. The mockups in this deck use documentary stills <em>only</em> as a visual aide for this conversation.</p>
-        <p style="margin:0;"><strong style="color:var(--uswdgc-teal)">A natural editorial home</strong> for the women in the panels who are physically attending — Newland, King, Korver — and an expanded panelist roster for the Friday screening.</p>
+        <p style="margin-bottom:10px;"><strong style="color:var(--uswdgc-teal)">MOU / formal agreement</strong> — terms of engagement between the LOC and The Steady Initiative, covering attribution, asset usage, and post-event retention.</p>
+        <p style="margin-bottom:10px;"><strong style="color:var(--uswdgc-teal)">Check-in presence</strong> — Steady Initiative merch and media sales at the registration area alongside the display.</p>
+        <p style="margin-bottom:10px;"><strong style="color:var(--uswdgc-teal)">Steady Initiative branding</strong> — co-presentation credit on every panel, with the USWDGC mark and "Original research from <em>No Girls Allowed</em>" attribution.</p>
+        <p style="margin-bottom:10px;"><strong style="color:var(--uswdgc-teal)">Asset retention post-event</strong> — agreement on who retains the physical panels and digital assets after USWDGC 2026.</p>
+        <p style="margin-bottom:10px;"><strong style="color:var(--uswdgc-teal)">PDGA Women's Committee coordination</strong> — alignment with the Committee on historical accuracy, panelist selection, and credit language.</p>
+        <p style="margin-bottom:10px;"><strong style="color:var(--uswdgc-teal)">Expanded panelist roster</strong> — up to 8 panelists for the Friday screening discussion, with dual moderators.</p>
+        <p style="margin:0;"><strong style="color:var(--uswdgc-teal)">Licensed archival photography</strong> — through Steady's source materials (PDGA archives, Disc Golfer Magazine, Inside Disc Golf, FLOW newsletter scans, primary correspondence) for the photo slots across all historical panels.</p>
       </div>
     </section>
 
-    <!-- 12. WHAT WE NEED -->
+    <!-- 13. NEXT STEPS -->
     <section class="content-slide" id="ask">
-      <div class="eyebrow">What we'd like from you</div>
-      <h2>Three asks.</h2>
+      <div class="eyebrow">Where we stand</div>
+      <h2>Next steps.</h2>
       <ul style="margin-top:18px;">
         <li>
-          <strong>Confirm the partnership framing.</strong>
-          Is "in partnership with The Steady Initiative" the right language? Any logo, wordmark, or attribution requests for the on-poster credit line? Anything you'd want the PDGA Women's Committee to second on the credit?
+          <strong>Arc confirmed.</strong>
+          Matt's May 11 proposal established the 7-panel structure (1976 → 2012 + welcome). The historical arc is locked.
         </li>
         <li>
-          <strong>Open the archival photo channel.</strong>
-          For panels 2, 3, and 4 we need licensed archival photographs — Marie Jackson at 1983 Huntsville, Elaine King and the 1993 Waterloo NWC, Juliana Bower at 1999 Hornet's Nest. Steady's source archive is the natural channel; would you be willing to broker access?
+          <strong>Archival gathering underway.</strong>
+          Source photography and documentation for the six historical panels is being assembled through the Steady Initiative's archive and primary sources.
         </li>
         <li>
-          <strong>Feedback on the structure.</strong>
-          Is 1979 → 1983 → 1993 → 1999 → 2017 the right five? Anything you'd swap or add? The PDGA Women's Committee's perspective is welcome — this is a community artifact, not a unilateral piece.
+          <strong>Screening timing under discussion.</strong>
+          Morning slot proposed for the Friday screening and panel discussion to avoid conflicts with afternoon tournament rounds.
+        </li>
+        <li>
+          <strong>MOU terms to finalize.</strong>
+          Formal agreement between the LOC and The Steady Initiative covering attribution, merch/media presence, asset retention, panelist roster (8), dual moderators, and post-event asset ownership.
         </li>
       </ul>
     </section>
 
-    <!-- 13. WHAT'S NEXT -->
+    <!-- 14. WHAT'S NEXT -->
     <section class="content-slide" id="next">
-      <div class="eyebrow">What happens after sign-off</div>
-      <h2>Designer takes it from here.</h2>
+      <div class="eyebrow">What happens next</div>
+      <h2>Partnership formalization<br>+ designer handoff.</h2>
       <p style="margin-top:24px; font-size:20pt; line-height:1.5;">
-        Once the structure and photo channel are confirmed, the project moves to a designer for final art — working in the official USWDGC type system (<em>Suiza · Adobe Garamond Premier Pro · Roboto</em>), placing licensed photography, and rendering at print resolution.
+        Matt's feedback has been received and the 7-panel arc is confirmed. The project now moves to two parallel tracks: formalizing the Steady Initiative partnership (MOU, asset terms, panelist roster) and handing off to a designer for final art.
       </p>
       <ul style="margin-top:24px;">
         <li><strong>Designer brief:</strong> the full copy, brand spec, layout grid, and source notes are already written and live with the LOC. Designer takes the brief, not the AI mockups.</li>
-        <li><strong>Print spec:</strong> 24×36 vertical, heavyweight matte stock, mounted on coroplast for the registration area.</li>
-        <li><strong>Print lead time:</strong> 7–10 business days from final art to delivery.</li>
+        <li><strong>Print spec:</strong> 24x36 vertical, heavyweight matte stock, mounted on coroplast for the registration area.</li>
+        <li><strong>Print lead time:</strong> 7-10 business days from final art to delivery.</li>
         <li><strong>Install:</strong> coordinated with Eric Erickson around the Delicate Arch centerpiece.</li>
       </ul>
       <p style="margin-top:28px; font-size:20pt; color:var(--text-muted); font-style:italic; font-family: 'EB Garamond', Georgia, serif;">
@@ -406,7 +451,7 @@
       </p>
     </section>
 
-    <!-- 14. CLOSING -->
+    <!-- 15. CLOSING -->
     <section class="cover" id="closing">
       <div class="eyebrow">Thank you</div>
       <h1 style="font-size:58pt;">Looking forward to<br>building it together.</h1>
